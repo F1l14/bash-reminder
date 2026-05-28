@@ -3,25 +3,25 @@ A simple linux reminder in bash
 
 # setup
 ```
-chmod +x reminder
-sudo mv reminder /usr/local/bin/reminder #to user without the ./ prefix
+chmod +x reminder.sh
+sudo cp reminder.sh /usr/local/bin/reminder.sh #to user without the ./ prefix
 ```
 # usage
-`./reminder [time expression] - [your message]`
+`./reminder.sh [time expression] - [your message]`
 ## Hour formats
 ```
-./reminder today 5pm - Time to go
-./reminder 17:00 - Leave for gym
-./reminder today 5 pm - Call mom
+./reminder.sh today 5pm - Time to go
+./reminder.sh 17:00 - Leave for gym
+./reminder.sh today 5 pm - Call mom
 ```
 ## Relative Delays
 ```
-./reminder now + 5 minutes - Check the oven
-./reminder now + 1 hour - Take a screen break
+./reminder.sh now + 5 minutes - Check the oven
+./reminder.sh now + 1 hour - Take a screen break
 ```
 ## Specific Target
 ```
-./reminder 10:30 tomorrow - Team Sync Meeting
+./reminder.sh 10:30 tomorrow - Team Sync Meeting
 ```
 
 ## Manager Active Reminders
